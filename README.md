@@ -1,16 +1,31 @@
-### Hi there 👋
+## Hi there! 👋
 
-<!--
-**RobertTheReal/RobertTheReal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```python
+class AboutMe:
+    def __init__(self):
+        self.name = 'Robert'
+        self.role = 'Computer Science Student'
+        self.degree = 'Artificial Intelligence'
+        self.languages = [
+            'Python',
+            'Java',
+            'Swift',
+        ]
+        self.databases = [
+            'PostgreSQL',
+            'SQLite',
+            'MongoDB'
+        ]
+        self.languages.append('SQL')
 
-Here are some ideas to get you started:
+    def say_hi(self):
+        print(
+            f'• {self.name}\n• {self.role} - {self.degree}\n'
+            f'• Languages: {", ".join(self.languages)}\n• Databases: {", ".join(self.databases)}'
+        )
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+me = AboutMe()
+me.say_hi()
+
+```
